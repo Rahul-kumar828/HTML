@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Table TAG</title>
+    <style>
+        body{
+            font-family: Arial,sans-serif;
+            margin-bottom: 500px;
+            padding: 5px;
+        }
+        #blue ,#blue th,#blue td{
+            border: 2px solid orangered;
+            border-collapse: collapse;
+            width: 500px;
+            box-shadow: 0 0 10px black;
+        }
+        #blue ,#blue tbody{
+            background-color: lime;
+
+        }
+
+    </style>
+</head>
+<body>
+
+    <!--
+        simple table
+        table row span
+        table col span
+        custom table with css
+    -->
+<h2>Simple table</h2>
+<table border="2">
+    <thead >
+          <tr>
+              <th>SNo.</th>
+              <th>Name</th>
+              <th>COMPANY</th>
+              <th>ADRESS</th>
+          </tr>
+    </thead>
+    <tbody>
+         <tr>
+             <td>1</td>
+             <td>rahul</td>
+             <td>wipro</td>
+             <td>patna</td>
+         </tr>
+    </tbody>
+    <tbody>
+          <tr>
+              <td>2</td>
+              <td>kumar</td>
+              <td>siska</td>
+              <td>patna</td>
+
+          </tr>
+    </tbody>
+    <tbody>
+    <tr>
+        <td>3</td>
+        <td>rohan</td>
+        <td>nokia</td>
+        <td>banglore</td>
+
+    </tr>
+    </tbody>
+</table>
+ <table border="2">
+
+    <h2>Table with col span</h2>
+
+    <thead>
+          <tr>
+              <th>sno</th>
+              <th>name</th>
+              <th colspan="2">company & andress</th>
+          </tr>
+    </thead>
+    <tbody>
+          <tr>
+              <td>1</td>
+              <td>john</td>
+              <td>wipro</td>
+              <td>banglore</td>
+          </tr>
+    </tbody>
+</table>
+<h2>table with row span</h2>
+<table border="2">
+    <thead>
+         <tr>
+             <th>sno.</th>
+             <th>name</th>
+             <th>company</th>
+             <th>adress</th>
+         </tr>
+    </thead>
+    <tbody>
+          <tr>
+              <td rowspan="3">1</td>
+              <td>john</td>
+              <td>infosys</td>
+              <td>banglore</td>
+          </tr>
+          <tr>
+              <td>rahul</td>
+              <td>wipro</td>
+              <td>hydrabad</td>
+          </tr>
+    <tr>
+        <td>kumar</td>
+        <td>nokia</td>
+        <td>pune</td>
+    </tr>
+    </tbody>
+</table>
+<h2>custom table</h2>
+    <table id="blue">
+        <thead>
+        <tr>
+            <th>SNo.</th>
+            <th>Name</th>
+            <th>COMPANY</th>
+            <th>ADRESS</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>1</td>
+            <td>rahul</td>
+            <td>wipro</td>
+            <td>patna</td>
+        </tr>
+        </tbody>
+        <tbody>
+        <tr>
+            <td>2</td>
+            <td>kumar</td>
+            <td>siska</td>
+            <td>patna</td>
+
+        </tr>
+        </tbody>
+        <tbody>
+        <tr>
+            <td>3</td>
+            <td>rohan</td>
+            <td>nokia</td>
+            <td>banglore</td>
+
+        </tr>
+        </tbody>
+    </table>
+
+
+
+
+
+</body>
+</html>
